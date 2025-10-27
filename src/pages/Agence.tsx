@@ -1,17 +1,71 @@
-import React from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { useRef } from "react";
 
 const Agence = () => {
+  gsap.registerPlugin(ScrollTrigger);
+  const imageDivRef = useRef<HTMLDivElement>(null);
+  const imageRef = useRef<HTMLImageElement>(null);
+
+  const imageArray = [
+    "../../public/MAN1.jpg",
+    "../../public/Man2.jpg",
+    "../../public/Man3.jpg",
+    "../../public/Man4.jpg",
+    "../../public/Man5.jpg",
+    "../../public/Woman1.jpg",
+    "../../public/Woman2.jpg",
+    "../../public/Woman3.jpg",
+    "../../public/Woman4.jpg",
+    "../../public/Woman5.jpg",
+    "../../public/Woman6.jpg",
+  ];
+
+  useGSAP(function () {
+    gsap.to(imageDivRef.current, {
+      scrollTrigger: {
+        trigger: imageDivRef.current,
+        markers: true,
+        start: "top 20%",
+        end: "top -70%",
+        pin: true,
+        scrub: 1,
+        pinSpacing: true,
+        pinReparent: true,
+        pinType: "transform",
+        anticipatePin: 1,
+        invalidateOnRefresh: true,
+        onUpdate: (elem) => {
+          console.log(Math.floor(elem.progress * imageArray.length));
+          const imageIndex = Math.floor(elem.progress * imageArray.length);
+          if (
+            imageRef.current &&
+            imageIndex >= 0 &&
+            imageIndex < imageArray.length
+          ) {
+            imageRef.current.src = imageArray[imageIndex];
+          }
+        },
+      },
+    });
+  });
+
   return (
     <div>
-      <div className="section1">
-        <div className="h-[20vw] w-[15vw] overflow-hidden absolute top-60 left-[30vw] rounded-3xl">
+      <div className="section1 py-1">
+        <div
+          ref={imageDivRef}
+          className="h-[20vw] w-[15vw] overflow-hidden absolute top-0 left-[30vw] rounded-3xl"
+        >
           <img
+            ref={imageRef}
             className="h-full w-full object-cover"
-            src="https://k72.ca/images/teamMembers/Carl_480x640.jpg?w=480&h=640&fit=crop&s=f0a84706bc91a6f505e8ad35f520f0b7"
+            src="../../public/Man1.jpg"
           />
         </div>
 
-        <div className="relative font-[font2]">
+        <div className="font-[font2] relative h-full">
           <div className="mt-[55vh]">
             <h1 className="text-[20vw] text-center uppercase leading-[17vw]">
               Soixan7e <br />
@@ -33,9 +87,7 @@ const Agence = () => {
         </div>
       </div>
 
-      <div className="section2 h-screen">
-
-      </div>
+      <div className="section2 h-screen"></div>
     </div>
   );
 };
