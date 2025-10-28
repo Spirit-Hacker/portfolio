@@ -1,5 +1,6 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 import { useRef } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -13,6 +14,8 @@ const Stairs = ({ children }: { children: React.ReactNode }) => {
   useGSAP(
     function () {
       const tl = gsap.timeline();
+      // Disable all ScrollTriggers during transition
+      ScrollTrigger.getAll().forEach((st) => st.disable());
 
       tl.from(".stair", {
         height: 0,
@@ -42,6 +45,11 @@ const Stairs = ({ children }: { children: React.ReactNode }) => {
         opacity: 0,
         delay: 1,
         scale: 1.3,
+        onComplete: () => {
+          // Re-enable and refresh triggers after animation
+          ScrollTrigger.getAll().forEach((st) => st.enable());
+          ScrollTrigger.refresh();
+        },
       });
     },
     [path]

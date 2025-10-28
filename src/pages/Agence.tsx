@@ -23,12 +23,12 @@ const Agence = () => {
   ];
 
   useGSAP(function () {
-    gsap.to(imageDivRef.current, {
+    const trigger = gsap.to(imageDivRef.current, {
       scrollTrigger: {
         trigger: imageDivRef.current,
         markers: true,
-        start: "top 20%",
-        end: "top -70%",
+        start: "top 26.6%",
+        end: "top -100%",
         pin: true,
         scrub: 1,
         pinSpacing: true,
@@ -49,6 +49,11 @@ const Agence = () => {
         },
       },
     });
+
+    return () => {
+      trigger.scrollTrigger?.kill(); // kill this trigger only
+      ScrollTrigger.getAll().forEach((t) => t.kill()); // or kill all if needed
+    };
   });
 
   return (
@@ -56,7 +61,7 @@ const Agence = () => {
       <div className="section1 py-1">
         <div
           ref={imageDivRef}
-          className="h-[20vw] w-[15vw] overflow-hidden absolute top-0 left-[30vw] rounded-3xl"
+          className="h-[20vw] w-[15vw] overflow-hidden absolute top-52 bottom-20 left-[30vw] rounded-3xl"
         >
           <img
             ref={imageRef}
