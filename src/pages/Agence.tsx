@@ -57,7 +57,7 @@ const Agence = () => {
   });
 
   return (
-    <div>
+    <div className="text-black">
       <div className="section1 py-1">
         <div
           ref={imageDivRef}
