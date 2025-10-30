@@ -1,7 +1,9 @@
-import { useRef } from "react";
+import { useContext, useRef } from "react";
+import { NavbarContext } from "../../context/NavContext";
 
 const Navbar = () => {
   const navGreenRef = useRef<HTMLDivElement>(null);
+  const [navOpen, setNavOpen] = useContext(NavbarContext)!;
 
   return (
     <div className="flex fixed top-0 z-4 justify-between w-full items-start">
@@ -23,6 +25,9 @@ const Navbar = () => {
 
       <div
         className="h-12 w-60 bg-black relative cursor-pointer"
+        onClick={() => {
+          setNavOpen(true);
+        }}
         onMouseEnter={() => {
           if (navGreenRef.current) {
             navGreenRef.current.style.height = "100%";
@@ -38,7 +43,10 @@ const Navbar = () => {
           ref={navGreenRef}
           className="h-0 w-full absolute top-0 bg-[#D3FD50] transition-all duration-200 ease-in-out"
         />
-        <div className="relative"></div>
+        <div className="relative flex flex-col gap-2 pr-5 items-end justify-center h-full">
+          <div className="w-14 h-[1.5px] bg-white" />
+          <div className="w-10 h-[1.5px] bg-white" />
+        </div>
       </div>
     </div>
   );

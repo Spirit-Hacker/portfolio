@@ -15,3 +15,40 @@ body {
     color: black;
     overflow-x: hidden;
 }
+
+.moveLink {
+  height: 0;
+  transition: height 200ms ease-out;
+  overflow: hidden;
+}
+
+.link:hover .moveLink {
+  height: 100%;
+}
+
+.moveX {
+    animation-name: movingAnimation;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movingAnimation {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes verticalGrowthAnimation  {
+    from {
+        height: 0%;
+        opacity: 0%;
+    }
+    to {
+        height: 100%;
+        opacity: 100%;
+    }
+}
