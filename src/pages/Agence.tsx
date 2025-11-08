@@ -26,7 +26,6 @@ const Agence = () => {
     const trigger = gsap.to(imageDivRef.current, {
       scrollTrigger: {
         trigger: imageDivRef.current,
-        markers: true,
         start: "top 26.6%",
         end: "top -100%",
         pin: true,
@@ -61,7 +60,7 @@ const Agence = () => {
       <div className="section1 py-1">
         <div
           ref={imageDivRef}
-          className="h-[20vw] w-[15vw] overflow-hidden absolute top-52 bottom-20 left-[30vw] rounded-3xl"
+          className="lg:h-[20vw] h-[30vw] lg:w-[15vw] w-[25vw] overflow-hidden absolute lg:top-52 top-0 lg:left-[30vw] left-[30vw] lg:rounded-3xl rounded-2xl"
         >
           <img
             ref={imageRef}
@@ -71,15 +70,15 @@ const Agence = () => {
         </div>
 
         <div className="font-[font2] relative h-full">
-          <div className="mt-[55vh]">
+          <div className="lg:mt-[55vh] mt-[30vh]">
             <h1 className="text-[20vw] text-center uppercase leading-[17vw]">
               Soixan7e <br />
               Douze
             </h1>
           </div>
 
-          <div className="pl-[40%] mt-20">
-            <p className="text-5xl">
+          <div className="lg:pl-[40%] lg:mt-20 p-3">
+            <p className="lg:text-5xl leading-tight text-xl">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Notre
               curiosité nourrit notre créativité. On reste humbles et on dit non
               aux gros egos, même le vôtre. Une marque est vivante. Elle a des

@@ -7,7 +7,7 @@ const ProjectCard = ({
 }) => {
   return (
     <>
-      <div className="relative w-1/2 group h-full hover:rounded-[50px] cursor-pointer overflow-hidden transition-all">
+      <div className="relative lg:w-1/2 w-full group h-full hover:rounded-[50px] cursor-pointer overflow-hidden transition-all">
         <img
           className="w-full h-full object-cover overflow-hidden"
           src={image1}
@@ -19,7 +19,7 @@ const ProjectCard = ({
           </h2>
         </div>
       </div>
-      <div className="relative w-1/2 group h-full hover:rounded-[50px] cursor-pointer overflow-hidden transition-all">
+      <div className="relative lg:w-1/2 w-full group h-full hover:rounded-[50px] cursor-pointer overflow-hidden transition-all">
         <img
           className="w-full h-full object-cover overflow-hidden"
           src={image2}

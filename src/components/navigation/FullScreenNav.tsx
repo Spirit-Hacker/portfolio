@@ -82,165 +82,165 @@ const FullScreenNav = () => {
           </div>
 
           <div
-            className="h-32 w-32 relative pt-1 cursor-pointer"
+            className="lg:h-32 lg:w-32 h-24 w-24 relative pt-1 cursor-pointer"
             onClick={() => setNavOpen(false)}
           >
-            <div className="bg-[#D3FD50] w-0.5 h-44 absolute -rotate-45 origin-top"></div>
-            <div className="bg-[#D3FD50] w-0.5 h-44 absolute right-0 rotate-45 origin-top"></div>
+            <div className="bg-[#D3FD50] w-0.5 lg:h-44 h-32 absolute -rotate-45 origin-top"></div>
+            <div className="bg-[#D3FD50] w-0.5 lg:h-44 h-32 absolute right-0 rotate-45 origin-top"></div>
           </div>
         </div>
-        <div id="all-links" className="py-14">
+        <div id="all-links" className="lg:py-14 py-32">
           <div className="link origin-top relative border-t border-gray-500 cursor-pointer">
-            <h1 className="font-[font2] text-[8vw] uppercase leading-[0.7] pt-7 text-center">
+            <h1 className="font-[font2] lg:text-[8vw] text-5xl uppercase lg:leading-[0.7] lg:pt-7 pt-3 text-center">
               Projects
             </h1>
             <div className="flex absolute top-0 bg-[#D3FD50] text-black moveLink">
               <div className="flex items-center moveX">
-                <h2 className="font-[font2] whitespace-nowrap text-[8vw] uppercase leading-[0.7] pt-7 text-center">
+                <h2 className="font-[font2] whitespace-nowrap lg:text-[8vw] text-4xl uppercase lg:leading-[0.7] pt-3 lg:pt-7 text-center">
                   Pour Tout Voir
                 </h2>
                 <img
-                  className="w-52 shrink-0 h-24 object-cover rounded-full pt-3"
+                  className="lg:w-52 w-36 shrink-0 lg:h-24 h-14 object-cover rounded-full lg:pt-3"
                   src="../../../public/Project1.jpg"
                 />
-                <h2 className="font-[font2] whitespace-nowrap text-[8vw] uppercase leading-[0.7] pt-7 text-center">
+                <h2 className="font-[font2] whitespace-nowrap lg:text-[8vw] text-4xl uppercase lg:leading-[0.7] pt-3 lg:pt-7 text-center">
                   Pour Tout Voir
                 </h2>
                 <img
-                  className="w-52 shrink-0 h-24 object-cover rounded-full pt-3"
+                  className="lg:w-52 w-36 shrink-0 lg:h-24 h-14 object-cover rounded-full lg:pt-3"
                   src="../../../public/Project2.jpg"
                 />
               </div>
               <div className="flex items-center moveX">
-                <h2 className="font-[font2] whitespace-nowrap text-[8vw] uppercase leading-[0.7] pt-7 text-center">
+                <h2 className="font-[font2] whitespace-nowrap lg:text-[8vw] text-4xl uppercase lg:leading-[0.7] pt-3 lg:pt-7 text-center">
                   Pour Tout Voir
                 </h2>
                 <img
-                  className="w-52 shrink-0 h-24 object-cover rounded-full pt-3"
+                  className="lg:w-52 w-36 shrink-0 lg:h-24 h-14 object-cover rounded-full lg:pt-3"
                   src="../../../public/Project1.jpg"
                 />
-                <h2 className="font-[font2] whitespace-nowrap text-[8vw] uppercase leading-[0.7] pt-7 text-center">
+                <h2 className="font-[font2] whitespace-nowrap lg:text-[8vw] text-4xl uppercase lg:leading-[0.7] pt-3 lg:pt-7 text-center">
                   Pour Tout Voir
                 </h2>
                 <img
-                  className="w-52 shrink-0 h-24 object-cover rounded-full pt-3"
+                  className="lg:w-52 w-36 shrink-0 lg:h-24 h-14 object-cover rounded-full lg:pt-3"
                   src="../../../public/Project2.jpg"
                 />
               </div>
             </div>
           </div>
           <div className="link origin-top relative border-t border-gray-500 cursor-pointer">
-            <h1 className="font-[font2] text-[8vw] uppercase leading-[0.7] pt-7 text-center">
+            <h1 className="font-[font2] lg:text-[8vw] text-5xl uppercase lg:leading-[0.7] lg:pt-7 pt-3 text-center">
               Agence
             </h1>
             <div className="flex absolute top-0 bg-[#D3FD50] text-black  moveLink">
               <div className="flex items-center moveX">
-                <h2 className="font-[font2] whitespace-nowrap text-[8vw] uppercase leading-[0.7] pt-7 text-center">
+                <h2 className="font-[font2] whitespace-nowrap lg:text-[8vw] text-4xl uppercase lg:leading-[0.7] pt-3 lg:pt-7 text-center">
                   Pour Tout Savoir
                 </h2>
                 <img
-                  className="w-52 shrink-0 h-24 object-cover rounded-full pt-3"
+                  className="lg:w-52 w-36 shrink-0 lg:h-24 h-14 object-cover rounded-full lg:pt-3"
                   src="../../../public/Agence.jpg"
                 />
-                <h2 className="font-[font2] whitespace-nowrap text-[8vw] uppercase leading-[0.7] pt-7 text-center">
+                <h2 className="font-[font2] whitespace-nowrap lg:text-[8vw] text-4xl uppercase lg:leading-[0.7] pt-3 lg:pt-7 text-center">
                   Pour Tout Savoir
                 </h2>
                 <img
-                  className="w-52 shrink-0 h-24 object-cover rounded-full pt-3"
+                  className="lg:w-52 w-36 shrink-0 lg:h-24 h-14 object-cover rounded-full lg:pt-3"
                   src="../../../public/Agence.jpg"
                 />
               </div>
               <div className="flex items-center moveX">
-                <h2 className="font-[font2] whitespace-nowrap text-[8vw] uppercase leading-[0.7] pt-7 text-center">
+                <h2 className="font-[font2] whitespace-nowrap lg:text-[8vw] text-4xl uppercase lg:leading-[0.7] pt-3 lg:pt-7 text-center">
                   Pour Tout Savoir
                 </h2>
                 <img
-                  className="w-52 shrink-0 h-24 object-cover rounded-full pt-3"
+                  className="lg:w-52 w-36 shrink-0 lg:h-24 h-14 object-cover rounded-full lg:pt-3"
                   src="../../../public/Agence.jpg"
                 />
-                <h2 className="font-[font2] whitespace-nowrap text-[8vw] uppercase leading-[0.7] pt-7 text-center">
+                <h2 className="font-[font2] whitespace-nowrap lg:text-[8vw] text-4xl uppercase lg:leading-[0.7] pt-3 lg:pt-7 text-center">
                   Pour Tout Savoir
                 </h2>
                 <img
-                  className="w-52 shrink-0 h-24 object-cover rounded-full pt-3"
+                  className="lg:w-52 w-36 shrink-0 lg:h-24 h-14 object-cover rounded-full lg:pt-3"
                   src="../../../public/Agence.jpg"
                 />
               </div>
             </div>
           </div>
           <div className="link origin-top relative border-t border-gray-500 cursor-pointer">
-            <h1 className="font-[font2] text-[8vw] uppercase leading-[0.7] pt-7 text-center">
+            <h1 className="font-[font2] lg:text-[8vw] text-5xl uppercase lg:leading-[0.7] lg:pt-7 pt-3 text-center">
               Contacts
             </h1>
             <div className="flex absolute top-0 bg-[#D3FD50] text-black moveLink">
               <div className="flex items-center moveX">
-                <h2 className="font-[font2] whitespace-nowrap text-[8vw] uppercase leading-[0.7] pt-7 text-center">
+                <h2 className="font-[font2] whitespace-nowrap lg:text-[8vw] text-4xl uppercase lg:leading-[0.7] pt-3 lg:pt-7 text-center">
                   Pour Envoyer Un Fax
                 </h2>
                 <img
-                  className="w-52 shrink-0 h-24 object-cover rounded-full pt-3"
+                  className="lg:w-52 w-36 shrink-0 lg:h-24 h-14 object-cover rounded-full lg:pt-3"
                   src="../../../public/Agence.jpg"
                 />
-                <h2 className="font-[font2] whitespace-nowrap text-[8vw] uppercase leading-[0.7] pt-7 text-center">
+                <h2 className="font-[font2] whitespace-nowrap lg:text-[8vw] text-4xl uppercase lg:leading-[0.7] pt-3 lg:pt-7 text-center">
                   Pour Envoyer Un Fax
                 </h2>
                 <img
-                  className="w-52 shrink-0 h-24 object-cover rounded-full pt-3"
+                  className="lg:w-52 w-36 shrink-0 lg:h-24 h-14 object-cover rounded-full lg:pt-3"
                   src="../../../public/Agence.jpg"
                 />
               </div>
               <div className="flex items-center moveX">
-                <h2 className="font-[font2] whitespace-nowrap text-[8vw] uppercase leading-[0.7] pt-7 text-center">
+                <h2 className="font-[font2] whitespace-nowrap lg:text-[8vw] text-4xl uppercase lg:leading-[0.7] pt-3 lg:pt-7 text-center">
                   Pour Envoyer Un Fax
                 </h2>
                 <img
-                  className="w-52 shrink-0 h-24 object-cover rounded-full pt-3"
+                  className="lg:w-52 w-36 shrink-0 lg:h-24 h-14 object-cover rounded-full lg:pt-3"
                   src="../../../public/Agence.jpg"
                 />
-                <h2 className="font-[font2] whitespace-nowrap text-[8vw] uppercase leading-[0.7] pt-7 text-center">
+                <h2 className="font-[font2] whitespace-nowrap lg:text-[8vw] text-4xl uppercase lg:leading-[0.7] pt-3 lg:pt-7 text-center">
                   Pour Envoyer Un Fax
                 </h2>
                 <img
-                  className="w-52 shrink-0 h-24 object-cover rounded-full pt-3"
+                  className="lg:w-52 w-36 shrink-0 lg:h-24 h-14 object-cover rounded-full lg:pt-3"
                   src="../../../public/Agence.jpg"
                 />
               </div>
             </div>
           </div>
           <div className="link origin-top relative border-y border-gray-500 cursor-pointer">
-            <h1 className="font-[font2] text-[8vw] uppercase leading-[0.7] pt-7 text-center">
+            <h1 className="font-[font2] lg:text-[8vw] text-5xl uppercase lg:leading-[0.7] lg:pt-7 pt-3 text-center">
               Blogue
             </h1>
             <div className="flex absolute top-0 bg-[#D3FD50] text-black  moveLink">
               <div className="flex items-center moveX">
-                <h2 className="font-[font2] whitespace-nowrap text-[8vw] uppercase leading-[0.7] pt-7 text-center">
+                <h2 className="font-[font2] whitespace-nowrap lg:text-[8vw] text-4xl uppercase lg:leading-[0.7] pt-3 lg:pt-7 text-center">
                   Lire Les Articles
                 </h2>
                 <img
-                  className="w-52 shrink-0 h-24 object-cover rounded-full pt-3"
+                  className="lg:w-52 w-36 shrink-0 lg:h-24 h-14 object-cover rounded-full lg:pt-3"
                   src="../../../public/Blog1.jpg"
                 />
-                <h2 className="font-[font2] whitespace-nowrap text-[8vw] uppercase leading-[0.7] pt-7 text-center">
+                <h2 className="font-[font2] whitespace-nowrap lg:text-[8vw] text-4xl uppercase lg:leading-[0.7] pt-3 lg:pt-7 text-center">
                   Lire Les Articles
                 </h2>
                 <img
-                  className="w-52 shrink-0 h-24 object-cover rounded-full pt-3"
+                  className="lg:w-52 w-36 shrink-0 lg:h-24 h-14 object-cover rounded-full lg:pt-3"
                   src="../../../public/Blog2.gif"
                 />
               </div>
               <div className="flex items-center moveX">
-                <h2 className="font-[font2] whitespace-nowrap text-[8vw] uppercase leading-[0.7] pt-7 text-center">
+                <h2 className="font-[font2] whitespace-nowrap lg:text-[8vw] text-4xl uppercase lg:leading-[0.7] pt-3 lg:pt-7 text-center">
                   Lire Les Articles
                 </h2>
                 <img
-                  className="w-52 shrink-0 h-24 object-cover rounded-full pt-3"
+                  className="lg:w-52 w-36 shrink-0 lg:h-24 h-14 object-cover rounded-full lg:pt-3"
                   src="../../../public/Blog1.jpg"
                 />
-                <h2 className="font-[font2] whitespace-nowrap text-[8vw] uppercase leading-[0.7] pt-7 text-center">
+                <h2 className="font-[font2] whitespace-nowrap lg:text-[8vw] text-4xl uppercase lg:leading-[0.7] pt-3 lg:pt-7 text-center">
                   Lire Les Articles
                 </h2>
                 <img
-                  className="w-52 shrink-0 h-24 object-cover rounded-full pt-3"
+                  className="lg:w-52 w-36 shrink-0 lg:h-24 h-14 object-cover rounded-full lg:pt-3"
                   src="../../../public/Blog2.gif"
                 />
               </div>
