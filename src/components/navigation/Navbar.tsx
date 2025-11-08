@@ -4,6 +4,7 @@ import { NavbarContext } from "../../context/NavContext";
 const Navbar = () => {
   const navGreenRef = useRef<HTMLDivElement>(null);
   const [navOpen, setNavOpen] = useContext(NavbarContext)!;
+  console.log(navOpen);
 
   return (
     <div className="flex fixed top-0 z-4 justify-between w-full items-start">
